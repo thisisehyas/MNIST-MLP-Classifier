@@ -163,6 +163,18 @@ The final model demonstrates strong performance on the MNIST digit-classificatio
 
 The model reaches **97–98% accuracy**, which is a strong result for a fully connected network trained without regularization, data augmentation, or advanced tuning techniques.
 
+## **Project Structure**
+
+```
+MNIST-MLP-Classifier/
+│
+├── README.md
+├── MLP_classifier_notebook.ipynb               # main analysis notebook
+├── requirements.txt
+└── plots/                       # visualizations
+    └── accuracy_loss_egitpochs.png
+```
+
 ## **How to Run**
 
 Follow the steps below to install dependencies, run the notebook/script, train the model, and reproduce the results.
