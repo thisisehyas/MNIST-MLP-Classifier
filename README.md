@@ -148,3 +148,17 @@ Overfitting was tracked using:
 ### **Accuracy and Loss Over Epochs**
 
 ![Accuracy and Loss Plot](plots/accuracy_loss_epochs.png)
+
+## **Results**
+
+The final model demonstrates strong performance on the MNIST digit-classification task, achieving **high accuracy** and **stable generalization** despite using a simple MLP architecture rather than convolutional layers.
+
+### **Final Evaluation Metrics**
+
+| Metric                 | Value                          |
+| ---------------------- | ------------------------------ |
+| **Test Accuracy**      | ~0.97–0.98                     |
+| **Test Loss**          | Printed during evaluation      |
+| **Evaluation Dataset** | 10,000 unseen grayscale images |
+
+The model reaches **97–98% accuracy**, which is a strong result for a fully connected network trained without regularization, data augmentation, or advanced tuning techniques.
