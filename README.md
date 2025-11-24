@@ -172,7 +172,7 @@ MNIST-MLP-Classifier/
 ├── MLP_classifier_notebook.ipynb               # main analysis notebook
 ├── requirements.txt
 └── plots/                       # visualizations
-    └── accuracy_loss_egitpochs.png
+    └── accuracy_loss_epochs.png
 ```
 
 ## **How to Run**
@@ -203,13 +203,13 @@ This installs TensorFlow, NumPy, and Matplotlib — all you need to run the proj
 If you have a Python script (e.g., `mnist_mlp.py`):
 
 ```bash
-python mnist_mlp.py
+python MLP_classifier_notebook.py
 ```
 
 If you're using a Jupyter Notebook:
 
 ```bash
-jupyter notebook mnist_mlp.ipynb
+jupyter notebook MLP_classifier_notebook.ipynb
 ```
 
 Running all cells will reproduce the full pipeline:
@@ -219,7 +219,7 @@ Running all cells will reproduce the full pipeline:
 - visualizing accuracy/loss
 - displaying predictions on random test images
 
-No dataset download is needed — MNIST is automatically fetched by Keras.
+MNIST is automatically downloaded and requires no manual dataset handling.
 
 ### **Google Colab (Recommended)**
 
