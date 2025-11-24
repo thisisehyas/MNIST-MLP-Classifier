@@ -162,3 +162,71 @@ The final model demonstrates strong performance on the MNIST digit-classificatio
 | **Evaluation Dataset** | 10,000 unseen grayscale images |
 
 The model reaches **97–98% accuracy**, which is a strong result for a fully connected network trained without regularization, data augmentation, or advanced tuning techniques.
+
+## **How to Run**
+
+Follow the steps below to install dependencies, run the notebook/script, train the model, and reproduce the results.
+
+### **Local Execution**
+
+#### **1. Clone the Repository**
+
+```bash
+git clone https://github.com/thisisehyas/mnist-mlp-classifier.git
+cd mnist-mlp-classifier
+```
+
+#### **2. Install the required libraries**
+
+Make sure you have Python 3.8+ installed, then run:
+
+```bash
+pip install -r requirements.txt
+```
+
+This installs TensorFlow, NumPy, and Matplotlib — all you need to run the project.
+
+#### **3. Run the script or notebook**
+
+If you have a Python script (e.g., `mnist_mlp.py`):
+
+```bash
+python mnist_mlp.py
+```
+
+If you're using a Jupyter Notebook:
+
+```bash
+jupyter notebook mnist_mlp.ipynb
+```
+
+Running all cells will reproduce the full pipeline:
+
+- loading and standardizing MNIST
+- training the MLP model
+- visualizing accuracy/loss
+- displaying predictions on random test images
+
+No dataset download is needed — MNIST is automatically fetched by Keras.
+
+### **Google Colab (Recommended)**
+
+#### **1. Upload the notebook**
+
+- Open **Google Colab**
+- Go to: **File -> Upload Notebook**
+- Upload `MLP_classifier_notebook.ipynb`
+
+#### **2. Install dependencies (if needed)**
+
+Colab already includes TensorFlow, NumPy, and Matplotlib.
+
+But if you want to ensure everything is up-to-date, run:
+
+```python
+!pip install tensorflow numpy matplotlib
+```
+
+#### **3. Run all cells**
+
+MNIST will be downloaded automatically inside Colab, so there is **no need for local files**.
